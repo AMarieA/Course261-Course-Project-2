@@ -59,7 +59,7 @@ def printinfo(empDetailList):
         empTotals['totTax'] = totalTax
         empTotals['totNet'] = totalNetPay
 
-def PrintTotals(empTotals):
+def printTotals(empTotals):
     print(f"\nTotal numer of employees: {empTotals['totEmp']}")
     print(f"Total hours: {empTotals['totHours']}")
     print(f"Total Gross Pay: {empTotals['totGross']}")
@@ -85,7 +85,6 @@ if __name__ == "__main__":
        empDetail.insert(4, rate)
        empDetail.insert(5, tax)
        empDetailList.append(empDetail)
-        
-       printinfo(empDetailList)
-       PrintTotals(empTotals)
+   printinfo(empDetailList) #if not indented correctly, will not print
+   printTotals(empTotals)  #if not indented correctly, will not print
         
